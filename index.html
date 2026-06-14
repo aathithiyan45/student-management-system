@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login • Student Manager</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-card glass">
+        <div class="brand">
+          <h1>Student Manager</h1>
+          <p class="muted">Modern, local-first student management</p>
+        </div>
+
+        <form class="login-form" id="login-form">
+          <label class="field">
+            <span>Username</span>
+            <input type="text" id="login-username" placeholder="admin" required />
+          </label>
+          <label class="field">
+            <span>Password</span>
+            <input type="password" id="login-password" placeholder="••••••••" required />
+          </label>
+
+          <div id="login-error" role="alert" aria-live="assertive" class="muted small" style="color:var(--danger);display:none"></div>
+
+          <div class="actions">
+            <button class="btn primary" type="submit">Login</button>
+          </div>
+        </form>
+
+        <footer class="muted small">Default credentials: admin / admin123</footer>
+      </section>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
